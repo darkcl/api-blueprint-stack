@@ -1,0 +1,15 @@
+{
+    "type": "array",
+    "maxItems": 10,
+    "items": {
+        "type": "object",
+        "properties": {
+            "id": {
+                "type": "number"
+            },
+            "content": {
+                "type": "string"
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+FORMAT: 1A
+
+# Blog
+
+Blog is a simple API to manage a blog
+
+# Group Post
+
+## Post Collection [/post]
+
+### List All Post [GET]
+
++ Response 200 (application/json; charset=utf-8)
+
+    + Body
+
+            <!-- include(response/post/get-200-list.json) -->
+
+    + Schema
+
+            <!-- include(schema/posts.json) -->
+
+### Create Post [POST]
+
++ Request
+
+    + Body
+
+            <!-- include(request/post/post-create.json) -->
+
++ Response 200 (application/json; charset=utf-8)
+
+    + Body
+
+            <!-- include(response/post/post-200-single.json) -->
+
+    + Schema
+
+            <!-- include(schema/post.json) -->
+
++ Request
+
+    Duplicated post id
+
+    + Body
+
+            <!-- include(request/post/post-create-duplicate.json) -->
+
++ Response 400

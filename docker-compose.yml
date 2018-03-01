@@ -1,0 +1,6 @@
+web:
+  image: darkcl/drakov-docker
+  volumes:
+    - .:/app/
+  ports:
+    - "8000:3000"
